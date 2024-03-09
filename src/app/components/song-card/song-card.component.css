@@ -1,0 +1,43 @@
+.spotify-card {
+  height: 210px;
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  margin-top: 120px;
+}
+
+.spotify-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.spotify-card-content {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.spotify-card-content h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.spotify-card-content p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.spotify-card-content audio {
+  width: 100%;
+  margin-top: 10px;
+  color:grey; 
+}

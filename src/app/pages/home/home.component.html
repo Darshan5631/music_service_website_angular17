@@ -1,0 +1,30 @@
+<div class="spotify_home-container row">
+    <div class="spotify_home-container_side-bar col-2">
+      <div class="spotify_home-container_side-bar-item">
+        <img width="150" class="m-3 text-left" src="assets/1.png" height="100">
+      </div>
+      <div class="spotify_home-container_side-bar-item">
+        <a>Home</a>
+      </div>
+      <div class="spotify_home-container_side-bar-item" (click)="onNavigateToSearch()">
+        <a>Search</a>
+      </div>
+      <div class="spotify_home-container_side-bar-item">
+        <a>Your Library</a>
+      </div>
+      <div class="spotify_home-container_side-bar-item">
+        <a>Create Playlist</a>
+      </div>
+    </div>
+    <div class="spotify_home-container_playlist-container col-10">
+      <app-top-nav></app-top-nav>
+      <div class="contain">
+        <div id="searchResults" class="container row">
+          <div class="col-3" *ngFor="let song of songs">
+            <app-song-card [song]="song"></app-song-card>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+  

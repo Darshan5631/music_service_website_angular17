@@ -1,0 +1,25 @@
+<div class="contain">
+  <div class="search-bar">
+    <img
+        width="200"
+        class="m-3 text-left" 
+        src="assets\2.png" height="70">
+    <input class="search-field" type="search" placeholder="Search"/>
+    <button class="button-56" (click)="search()">
+      <span>Search</span>
+    </button>
+    <button class="login" (click)="onNavigateToLogout()">
+      <span>Home</span>
+    </button>
+  </div>
+
+  <div id="searchResults" class="container">
+    <div class="spotify-card" *ngFor="let song of songs">
+      <img src="assets/th5.jpeg" alt="Placeholder image">
+      <div class="spotify-card-content">
+        <h3>{{ song.name }}</h3>
+        <audio [src]="song.path" controls></audio>
+      </div>
+    </div>
+  </div>
+</div>
